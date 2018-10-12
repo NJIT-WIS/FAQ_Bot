@@ -1,4 +1,4 @@
-<?php
+echo web: vendor/bin/heroku-php-apache2 public/ Procfile<?php
 
 /**
  * Laravel - A PHP Framework For Web Artisans
