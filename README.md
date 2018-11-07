@@ -5,4 +5,16 @@
 
 
 
+##
+Development Heroku URL
+#
+https://agile-badlands-52879.herokuapp.com/
 
+##
+QA Heroku URL
+#
+https://afternoon-retreat-22476.herokuapp.com/
+##
+MASTER Heroku Url
+# 
+https://gentle-forest-54059.herokuapp.com/
