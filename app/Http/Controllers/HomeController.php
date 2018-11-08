@@ -1,5 +1,9 @@
 <?php
 
+
+/**
+ * this is the home controller
+ */
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
