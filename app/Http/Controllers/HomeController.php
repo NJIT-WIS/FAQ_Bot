@@ -14,9 +14,15 @@
  * the PHP License and are unable to obtain it through the web, please
  * send a note to license@php.net so we can mail you a copy immediately.
  *
- * @category   CategoryName
- * @package    PackageName
- * @author     Original Author <author@example.com>
+ * @category CategoryName
+ * @package  PackageName
+ * @author   Original Author <author@example.com>
+ */
+
+
+/**
+ * This is a "Docblock Comment," also known as a "docblock."  The class'
+ * docblock, below, contains a complete description of how to write these.
  */
 
 
