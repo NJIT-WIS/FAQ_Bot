@@ -42,8 +42,19 @@ use Illuminate\Http\Request;
 
 
 /**
- * Class HomeController
- * @package App\Http\Controllers
+ * An example of how to write code to PEAR's standards
+ *
+ * @category   CategoryName
+ * @package    PackageName
+ * @author     Original Author <author@example.com>
+ * @author     Another Author <another@example.com>
+ * @copyright  1997-2005 The PHP Group
+ * @license    http://www.php.net/license/3_01.txt  PHP License 3.01
+ * @version    Release: @package_version@
+ * @link       http://pear.php.net/package/PackageName
+ * @see        NetOther, Net_Sample::Net_Sample()
+ * @since      Class available since Release 1.2.0
+ * @deprecated Class deprecated in Release 2.0.0
  */
 class HomeController extends Controller
 {
