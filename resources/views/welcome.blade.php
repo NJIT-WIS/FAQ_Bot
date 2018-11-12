@@ -81,7 +81,7 @@
 
             <div class="content">
                 <div class="title m-b-md">
-                    Laravel
+                    NJIT FAQ Bot Project
                 </div>
 
                 <div class="links">
