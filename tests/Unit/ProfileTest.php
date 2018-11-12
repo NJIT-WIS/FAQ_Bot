@@ -15,8 +15,7 @@ use Illuminate\Foundation\Testing\RefreshDatabase;
 class ProfileTest extends TestCase
 {
 
-    public function testProfleInsert()
-    {
+    public function testProfleInsert(){
         $profile = factory(Profile::class)->make();
         $this->assertTrue($profile->save());
 
@@ -30,3 +29,5 @@ class ProfileTest extends TestCase
     }
 
 }
+
+?>
