@@ -15,14 +15,18 @@ use Illuminate\Foundation\Testing\RefreshDatabase;
 class ProfileTest extends TestCase
 {
 
-    public function saveProfile(){
-        $user = factory(\App\User::class)->make();
-        $user -> save();
-        $profile = factory(\App\Profile::class)->make();
-        $profile->user()->associatve($user);
-        $this -> assertTrue($profile->save());
+    public function testProfleInsert()
+    {
+        $profile = factory(Profile::class)->make();
+        $this->assertTrue($profile->save());
 
+        $profile->delete();
     }
 
+    public function testProfileUpdate() {
+        $profile = Profile::find(1);
+        $profile->firs_name = 'John';
+        $this->assertTrue($profile->save());
+    }
 
 }
