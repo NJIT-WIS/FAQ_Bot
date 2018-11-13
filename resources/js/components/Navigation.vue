@@ -26,7 +26,7 @@
                             <v-icon>{{ item.icon }}</v-icon>
                         </v-list-tile-action>
                         <v-list-tile-content>
-                            <v-list-tile-title class="grey--text">
+                            <v-list-tile-title class="black--text body-2">
                                 {{ item.text }}
                             </v-list-tile-title>
                         </v-list-tile-content>
@@ -34,15 +34,16 @@
                 </template>
             </v-list>
         </v-navigation-drawer>
-        <v-toolbar color="amber" app absolute clipped-left>
-            <v-toolbar-side-icon @click.native="drawer = !drawer"></v-toolbar-side-icon>
-            <span class="title ml-3 mr-5">FAQBot</span>
+        <v-toolbar color="blue-grey" app absolute clipped-left>
+            <v-toolbar-side-icon @click.native="drawer = !drawer" class="white--text"></v-toolbar-side-icon>
+            <span class="title ml-3 mr-5 white--text">FAQBot</span>
             <v-text-field
                     solo-inverted
                     flat
                     hide-details
                     label="Search"
                     prepend-inner-icon="search"
+                    class="white--text"
             ></v-text-field>
             <v-spacer></v-spacer>
         </v-toolbar>
