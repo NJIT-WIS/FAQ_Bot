@@ -38,7 +38,7 @@ before_script:
 
 script:
 #- php artisan dusk
-- vendor/bin/phpunit --debug --coverage-text
+- vendor/bin/phpunit --verbose --debug --coverage-text
 # - phpcs --ignore=app/Http/Controllers/Auth,app/Http/Controllers/Controller.php app/Http/Controllers
 - npm run production
 #- jshint resources/assets/js/modules/*
