@@ -1,0 +1,26 @@
+[
+    {
+        "level": "SEVERE",
+        "message": "http:\/\/127.0.0.1:8000\/js\/app.js - Failed to load resource: net::ERR_INVALID_HTTP_RESPONSE",
+        "source": "network",
+        "timestamp": 1542169330614
+    },
+    {
+        "level": "SEVERE",
+        "message": "http:\/\/127.0.0.1:8000\/css\/app.css - Failed to load resource: net::ERR_INVALID_HTTP_RESPONSE",
+        "source": "network",
+        "timestamp": 1542169330709
+    },
+    {
+        "level": "SEVERE",
+        "message": "http:\/\/127.0.0.1:8000\/js\/app.js - Failed to load resource: net::ERR_INVALID_HTTP_RESPONSE",
+        "source": "network",
+        "timestamp": 1542169331303
+    },
+    {
+        "level": "SEVERE",
+        "message": "http:\/\/127.0.0.1:8000\/css\/app.css - Failed to load resource: net::ERR_INVALID_HTTP_RESPONSE",
+        "source": "network",
+        "timestamp": 1542169331304
+    }
+]
