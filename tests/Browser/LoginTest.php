@@ -19,10 +19,8 @@ class LoginTest extends DuskTestCase
     public function testBasicExample()
     {
         $user = factory(User::class)->create();
-        echo $user;
         $this->browse(function ($browser) use ($user) {
             $browser->visit('/login')
-                ->assertPathis('/login')
                 ->type('email', $user->email)
                 ->type('password', 'secret')
                 ->press('Login')
