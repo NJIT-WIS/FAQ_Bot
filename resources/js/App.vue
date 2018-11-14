@@ -3,8 +3,8 @@
         <navigation></navigation>
         <v-content style="display: flex; justify-content: center; align-items: center;">
             <!--<login></login>-->
-            <passRecover></passRecover>
-            <!-- <register></register> -->
+            <!--<passRecover></passRecover>-->
+             <register></register>
             <!-- <not-found></not-found> -->
         </v-content>
     </v-app>
