@@ -16,9 +16,13 @@ before_script:
 - npm install npm@latest -g
 - npm install -g jshint
 - npm install
+- google-chrome-stable --headless --disable-gpu --remote-debugging-port=9222 http://localhost &
+- php artisan serve &
+
 
 script:
 - vendor/bin/phpunit --coverage-text
 # - phpcs --ignore=app/Http/Controllers/Auth,app/Http/Controllers/Controller.php app/Http/Controllers
 - npm run production
 - jshint resources/assets/js/modules/*
+- php artisan dusk
