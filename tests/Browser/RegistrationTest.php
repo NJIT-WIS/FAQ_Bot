@@ -7,7 +7,7 @@ use Tests\DuskTestCase;
 use Laravel\Dusk\Chrome;
 use Illuminate\Foundation\Testing\DatabaseMigrations;
 
-class LoginTest extends DuskTestCase
+class RegistrationTest extends DuskTestCase
 {
     use DatabaseMigrations;
 
@@ -16,14 +16,16 @@ class LoginTest extends DuskTestCase
      *
      * @return void
      */
-    public function testLogin()
+    public function testRegistration()
     {
-        $user = factory(User::class)->create();
+        $user = factory(User::class)->make();
         $this->browse(function ($browser) use ($user) {
-            $browser->visit('/login')
-                ->type('email', $user->email)
+            $browser->visit('/register')
+                ->type('name', 'Kyle Payne')
+                ->type('email', 'kjp44@njit.edu')
                 ->type('password', 'secret')
-                ->press('Login')
+                ->type('password_confirmation', 'secret')
+                ->press('Register')
                 ->assertPathIs('/home')
                 ->assertSee('You are logged in!');
         });
