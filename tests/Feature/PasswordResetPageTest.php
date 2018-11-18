@@ -13,9 +13,9 @@ class PasswordResetPageTest extends TestCase
      *
      * @return void
      */
-//    public function testPasswordReset()
-//    {
-//        $response = $this->get('/password/reset');
-//        $response->assertStatus(200);
-//    }
+    public function testPasswordReset()
+    {
+        $response = $this->get('/password/reset');
+        $response->assertStatus(200);
+    }
 }
