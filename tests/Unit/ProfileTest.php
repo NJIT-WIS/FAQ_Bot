@@ -16,7 +16,7 @@ use \App\Profile;
 class ProfileTest extends TestCase
 {
 
-    public function testProfleInsert(){
+    public function testProfileInsert(){
         $profile = factory(Profile::class)->make();
         $this->assertTrue($profile->save());
 
