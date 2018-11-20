@@ -70482,6 +70482,7 @@ var Component = normalizeComponent(
 )
 Component.options.__file = "resources/js/views/Login.vue"
 
+
 /* hot reload */
 if (false) {(function () {
   var hotAPI = require("vue-hot-reload-api")
@@ -70519,6 +70520,46 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 //
 //
 //
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 
 /* harmony default export */ __webpack_exports__["default"] = ({});
 
@@ -70531,23 +70572,127 @@ var render = function() {
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
   return _c(
-    "v-container",
-    { attrs: { fluid: "", "fill-height": "" } },
+    "v-card",
+    {
+      staticStyle: { width: "50%", height: "95%", margin: "0 auto" },
+      attrs: { color: "blue-grey darken-1", dark: "" }
+    },
     [
       _c(
         "v-layout",
-        { attrs: { column: "" } },
+        {
+          staticClass: "text-md-center display-1 font-weight-medium",
+          staticStyle: {
+            padding: "2rem",
+            display: "flex",
+            "justify-content": "center"
+          },
+          attrs: { wrap: "" }
+        },
+        [_vm._v("\n        Login Page\n    ")]
+      ),
+      _vm._v(" "),
+      _c(
+        "v-layout",
+        {
+          staticClass: "text-md-center title font-weight-regular",
+          staticStyle: {
+            margin: "0 6rem 0 6rem",
+            display: "flex",
+            "justify-content": "center"
+          },
+          attrs: { wrap: "" }
+        },
+        [_vm._v("\n        Fill out the form below to login.\n    ")]
+      ),
+      _vm._v(" "),
+      _c(
+        "v-form",
+        { staticStyle: { padding: "2rem" } },
         [
-          _c("v-flex", { attrs: { xs12: "" } }, [
-            _c("h4", { staticClass: "display-1 text-md-center" }, [
-              _vm._v(
-                "\n                Login Page Content Goes Here...\n            "
+          _c(
+            "v-container",
+            [
+              _c(
+                "v-layout",
+                { attrs: { wrap: "" } },
+                [
+                  _c(
+                    "v-flex",
+                    { attrs: { xs12: "" } },
+                    [
+                      _c("v-text-field", {
+                        attrs: {
+                          disabled: _vm.isUpdating,
+                          box: "",
+                          color: "blue-grey lighten-2",
+                          label: "Email",
+                          required: ""
+                        },
+                        model: {
+                          value: _vm.Email,
+                          callback: function($$v) {
+                            _vm.Email = $$v
+                          },
+                          expression: "Email"
+                        }
+                      }),
+                      _vm._v(" "),
+                      _c("v-text-field", {
+                        attrs: {
+                          "append-icon": _vm.show1
+                            ? "visibility_off"
+                            : "visibility",
+                          errormessage: _vm.nameErrors,
+                          box: "",
+                          color: "blue-grey lighten-2",
+                          label: "Password",
+                          hint: "Atleast 6 characters",
+                          required: ""
+                        },
+                        on: {
+                          "click:append": function($event) {
+                            _vm.show1 = !_vm.show1
+                          }
+                        },
+                        model: {
+                          value: _vm.password,
+                          callback: function($$v) {
+                            _vm.password = $$v
+                          },
+                          expression: "password"
+                        }
+                      })
+                    ],
+                    1
+                  )
+                ],
+                1
               )
-            ])
-          ])
+            ],
+            1
+          ),
+          _vm._v(" "),
+          _c(
+            "div",
+            {
+              staticStyle: {
+                width: "100%",
+                display: "flex",
+                "justify-content": "center",
+                "align-items": "center"
+              }
+            },
+            [_c("v-btn", { attrs: { large: "" } }, [_vm._v("Login")])],
+            1
+          )
         ],
         1
-      )
+      ),
+      _vm._v(" "),
+      _c("v-divider"),
+      _vm._v(" "),
+      _c("div")
     ],
     1
   )
@@ -70778,7 +70923,7 @@ var render = function() {
   return _c(
     "v-card",
     {
-      staticStyle: { width: "65%", height: "95%", margin: "0 auto" },
+      staticStyle: { width: "50%", height: "95%", margin: "0 auto" },
       attrs: { color: "blue-grey darken-1", dark: "" }
     },
     [
@@ -70911,7 +71056,7 @@ var render = function() {
             "align-items": "center"
           }
         },
-        [_c("passRecover")],
+        [_c("login")],
         1
       )
     ],

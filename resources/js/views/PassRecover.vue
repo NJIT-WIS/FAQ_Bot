@@ -2,7 +2,7 @@
     <v-card
             color="blue-grey darken-1"
             dark
-            style="width: 65%; height: 95%; margin: 0 auto;"
+            style="width: 50%; height: 95%; margin: 0 auto;"
     >
         <v-layout wrap class="text-md-center display-1 font-weight-medium" style="padding: 2rem; display: flex; justify-content: center;" >
             Password Reset

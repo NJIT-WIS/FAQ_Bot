@@ -2,8 +2,8 @@
     <v-app id="keep">
         <navigation></navigation>
         <v-content style="display: flex; justify-content: center; align-items: center;">
-            <!--<login></login>-->
-            <passRecover></passRecover>
+            <login></login>
+            <!--<passRecover></passRecover>-->
             <!-- <register></register> -->
             <!-- <not-found></not-found> -->
         </v-content>
